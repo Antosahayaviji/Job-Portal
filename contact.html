@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    
+    <title>📞Contact</title>
+</head>
+<body>
+    <!-- Logo and navigation -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="logo.jpg" alt="Logo" style="width:50px;" class="rounded-pill">
+        </a>
+
+        <ul class="nav-links">
+          <li><a class="active" href="jobportalhome.html">🏠 Home</a></li>
+          <li><a href="search.html">🎓 Jobs</a></li>
+          <li><a href="about.html">📈 About Us</a></li>
+        </ul>
+
+        <ul class="auth-links">
+          <li><a href="login.html">🗐 Login</a></li>
+          <li><a href="register.html">📲 Register</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <div class="container">
+        <div style="text-align: center;">
+            <h2 style="color: darkmagenta; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-size: 30px;">Contact Us</h2>
+            <p style="font-size: 20px; color: lawngreen;">Feel free to share your queries</p>
+        </div>
+        
+        <div class="row">
+        <div class="column">
+
+            
+            
+
+
+
+            
+            <form class="form" id="contactForm">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your full name...">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email...">
+                <label for="text">Phone Number</label>
+                <input type="text" id="text" name="text" placeholder="Enter your phone number...">
+                <label for="district">District</label>
+                 <select id="district" name="district">
+          <option value="tenkasi">Tenkasi</option>
+          <option value="kannyakumari">Kannyakumari</option>
+          <option value="erode">Erode</option>
+          <option value="sivagangai">Sivagangai</option>
+          <option value="coimbatore">Coimbatore</option>
+          <option value="cuddalore">Cuddalore</option>
+          <option value="ranipet">Ranipet</option>
+          <option value="viluppuram">Viluppuram</option>
+          <option value="pudukkottai">Pudukkottai</option>
+          <option value="tiruchirappalli">Tiruchirappalli</option>
+          <option value="thoothukudi">Thoothukudi</option>
+          <option value="chennai">Chennai</option>
+          <option value="tiruppur">Tiruppur</option>
+          <option value="nilgiris">Nilgiris</option>
+        </select>
+<label for="intrested">Intrested Program</label>
+<select id="intrested" name="intrested">
+    <option value="frontend developer">Frontend Developer</option>
+    <option value="full stack developer">Java Full Stack Developer</option>
+    <option value="full stack">.Net Full Stack Development</option>
+
+</select>
+<label for="msg">Your message</label>
+        <textarea id="msg" name="subject" placeholder="Your message here..." style="height:170px"></textarea>
+        <div class="form-actions">
+            <button type="submit">Submit</button>
+            <button type="button" id="clearDraft">Clear Draft</button>
+            <button type="button" id="showSubmittedBtn">Submitted Forms</button>
+        </div>
+        <div id="formStatus" aria-live="polite" style="margin-top:8px;color:#333;font-size:0.95rem"></div>
+
+            </form>
+        </div>
+</div>
+    </div>
+        <section id="submissionsSection" class="submissions" style="max-width:900px;margin:20px auto;padding:12px;">
+        <h3>Previous Submissions</h3>
+        <div class="sub-controls" style="margin-bottom:8px;">
+            <button id="toggleSubmissions">Hide</button>
+            <button id="clearSubmissions">Clear All Submissions</button>
+        </div>
+        <div id="submissionsList" aria-live="polite"></div>
+    </section>
+        <script src="contact.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>🔐Login Page</title>
+</head>
+<body>
+    <!-- Logo and navigation -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="logo.jpg" alt="Logo" style="width:50px;" class="rounded-pill">
+        </a>
+
+        <ul class="nav-links">
+          <li><a class="active" href="jobportalhome.html">🏠 Home</a></li>
+          <li><a href="search.html">🎓 Jobs</a></li>
+          <li><a href="about.html">📈 About Us</a></li>
+        </ul>
+
+        <ul class="auth-links">
+          <li><a href="login.html">🗐 Login</a></li>
+          <li><a href="register.html">📲 Register</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+
+
+   <form id="loginForm" onsubmit="return handleLogin(event)">
+  <div class="imgcontainer">
+    <img src="login user.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label> <br>
+    <input type="text" placeholder="Enter Username" name="uname" id="username" required> <br>
+
+    <label for="psw"><b>Password</b></label> <br>
+    <input type="password" placeholder="Enter Password" name="psw" id="password" required> <br>
+        
+    <div class="button-row">
+      <button type="submit">Login</button>
+      <button type="button" class="cancelbtn" onclick="clearForm()">Cancel</button>
+    </div>
+
+    <div class="options-row">
+      <div class="remember-me">
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+      <div class="forgot-password">
+        <span style="font-size: 20px; color: red;" class="psw"><a href="#" onclick="showForgotPassword()"> Forgot password?</a></span>
+      </div>
+    </div>
+  </div>
+
+  
+</form>
+
+<!-- Forgot Password Modal -->
+<div id="forgotPasswordModal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="close" onclick="closeForgotPassword()">&times;</span>
+    <h2>Reset Password</h2>
+    <form id="resetPasswordForm" onsubmit="return handleResetPassword(event)">
+      <div class="container">
+        <label for="email"><b>Email</b></label><br>
+        <input type="email" placeholder="Enter Email" id="resetEmail" required><br>
+        <label for="newPassword"><b>New Password</b></label><br>
+        <input type="password" placeholder="Enter New Password" id="newPassword" required><br>
+        <button type="submit">Reset Password</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+    <script src="login.js"></script>
+</body>
+</html>

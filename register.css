@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("register1.jpg");
+    background-size: 1950px 1000px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+   background-color: #F7A5A5; 
+    color: black;
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.25rem 1rem;
+}
+
+.navbar-brand img {
+    display: block;
+}
+.nav-links,
+.auth-links {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.nav-links li a,
+.auth-links li a {
+    display: block;
+    color: #cc0000;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+.nav-links li a:hover,
+.auth-links li a:hover {
+    background-color: #111;
+    border-radius: 4px;
+}
+.auth-links {
+    margin-left: auto;
+}
+/* register */
+* {
+    box-sizing: border-box;
+}
+.center-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+.signin {
+    text-align: center;
+}
+input[type=text], input[type=password] {
+    width: 400px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: solid;
+    border-width: 1px;
+    background: #fff;
+    color: #000;
+}
+
+input[type=text]::placeholder,
+input[type=password]::placeholder {
+    color: #000;
+    opacity: 1;
+}
+input[type=text]:focus, input[type=password]:focus {
+    background-color: none;
+    outline: auto;
+}
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+.registerbtn {
+    background-color: green;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+.registerbtn:hover {
+    opacity: 1;
+}
+a {
+    color: black;
+}
+a:hover {
+    font-size: 30px;
+    color: blue;
+}
+.signin {
+    /* background-color: aqua; */
+    text-align: center;
+}

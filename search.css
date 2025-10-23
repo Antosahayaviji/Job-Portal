@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("jobportal1.webp");
+    background-size: 1950px 1000px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #333;
+    color: #fff;
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.25rem 1rem;
+}
+
+.navbar-brand img {
+    display: block;
+}
+.nav-links,
+.auth-links {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.nav-links li a,
+.auth-links li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+.nav-links li a:hover,
+.auth-links li a:hover {
+    background-color: #111;
+    border-radius: 4px;
+}
+.auth-links {
+    margin-left: auto;
+}
+
+/*Search container*/
+.search-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    
+}
+.search-column {
+    flex: 1;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.search-column label {
+    font-weight: bold;
+    color: red;
+    font-size: 20px;
+}
+.search-column input {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    
+}
+#find-button {
+    padding: 12px 30px;
+    background-color: #3B0270;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+#find-button:hover {
+    background-color: #2a0152;
+}
+
+/*Flex container */
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: none;
+}
+.container div {
+    background-color: none;
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    border-style: double;
+    border-color: yellow;
+    border-radius: 2px;
+    border-width: 6px;
+    color: white;
+    font-size: 20px;
+}
+a:hover {
+    font-size: 45px;
+}
+h4 {
+    color: black;
+}
+
+/* Pagination / Previous-Next buttons */
+.pagination-container {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 3rem;
+}
+.page-btn {
+    background-color: #F87B1B;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.2s, transform 0.08s;
+}
+.page-btn:hover { background-color: #2a0152; }
+.page-btn:active { transform: translateY(1px); }
+
+/* Small screens: keep buttons side-by-side but shrink padding */
+@media (max-width: 520px) {
+    .page-btn { padding: 8px 12px; font-size: 14px; }
+}
+
+

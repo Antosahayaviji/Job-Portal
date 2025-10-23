@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("about\ us1.jpg");
+    background-size: 1950px 1000px;
+}
+/* navigation */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #333;
+    color: #fff;
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.25rem 1rem;
+}
+
+.navbar-brand img {
+    display: block;
+}
+.nav-links,
+.auth-links {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.nav-links li a,
+.auth-links li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+.nav-links li a:hover,
+.auth-links li a:hover {
+    background-color: #111;
+    border-radius: 4px;
+}
+.auth-links {
+    margin-left: auto;
+}
+/* form */
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.container {
+  border-radius: 5px;
+  /* background-color: #f2f2f2; */
+  padding: 10px;
+}
+.column {
+    margin-left: 500px;
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width:  600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+.img {
+    margin: auto;
+    
+}
+.form {
+    text-align: center;
+}
