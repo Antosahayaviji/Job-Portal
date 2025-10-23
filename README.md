@@ -5,12 +5,12 @@
 * A job portal is an `online platform` that connects `job seekers` with `employers`, allowing companies to post vacancies and candidates to search for `jobs`, `upload resumes`, and `apply for positions`.
 * These platforms streamline the `hiring process` by providing a central place for job listings, candidate applications, and communication. Key features often include job search filters, resume-building tools, and automated job alerts.
 
-# 🎯 PURPOSE
+# 🎯 Purpose
 
 * The purpose of a job portal is to connect `job seekers` and `employers` by providing an `online platform` for both.
 * Job seekers can search for openings, upload resumes, and apply for positions, while employers can post vacancies, search for candidates, and manage applications, thereby simplifying the hiring process for both parties.
 
-# 📜 CONTENT
+# 📜 Content
 
 * This portal is created with `HTML`, `CSS` and `Javascript`.
 * This website is completely designed in an `interactive way` about the content of `job position`.
