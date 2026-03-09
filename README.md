@@ -26,4 +26,4 @@
 * You can `login` to this page. If you are a new user then you can also `register` here.
 
 
-You can also visit this webpage with the following link🔗: https://latha16.neocities.org/Javascript/Job%20Portal/jobportalhome
+You can also visit this webpage with the following link🔗: https://neocities.org/site_files/text_editor?filename=Javascript%2FJob+Portal+Task+1%2Fjobportalhome.html
